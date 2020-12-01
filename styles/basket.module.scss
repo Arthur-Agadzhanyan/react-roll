@@ -1,0 +1,248 @@
+.basket_title{
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.container{
+    max-width: 1330px;
+    padding: 40px 15px;
+    margin: 0 auto;
+}
+
+.empty_basket__title{
+    font-size: 45px;
+    color: rgb(121, 121, 121);
+    margin-top: 10%;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.basket__btn{
+    padding: 15px 25px;
+    font-size: 18px;
+    background: transparent;
+    border: 1px solid #202020;
+    color:#202020;
+    font-weight: bold;
+    transition: all .2s linear;
+    padding: 15px 25px;
+    cursor: pointer;
+    &:hover{
+        background: #202020;
+        color:#fff;
+    }
+}
+
+.empty__btn{
+    margin-left: 50%;
+    transform: translate(-50%,50%);
+}
+
+.top_content{
+    display: flex;
+    justify-content:space-between;
+    align-items:center
+}
+
+.clear_basket{
+    background: #e7e7e7;
+    color: #282828;
+    padding: 15px 25px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    .basket_X{
+        font-size: 21px;
+        padding-right: 10px;
+        font-weight: 700;
+    }
+    transition: all .2s linear;
+    &:hover{
+        color: #e7e7e7;
+        background: #282828;;
+    }
+}
+
+.controlls{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    
+    .basket__btn{
+        margin-top: 10px;
+    }
+}
+.order_delivery{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    background: transparent;
+    border: 1px solid #00a046;
+    color: #00a046;
+    padding: 15px 25px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    transition: all .2s linear;
+    
+    &:hover{
+        color: #fff;
+        background: #00a046;;
+    }
+}
+
+.basket__totalPrice{
+    width: 100%;
+    border-top: 1px solid #ccc;
+    text-align: right;
+    padding: 25px 0px;
+}
+
+.totalPrice__title{
+    font-weight: normal;
+    padding-bottom: 10px;
+    font-size: 25px;
+}
+.count{
+    font-size: 18px;
+}
+
+// оформление заказа
+
+.delivery{
+    margin-top: 5vh;
+    
+    .title{
+        font-size: 2em;
+        color: #202020;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 10px;
+    }
+    .section_title{
+        margin: 17px 0px;
+        font-size: 1.5em;
+    }
+    .client{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        
+        .client__input{
+            flex: 0 1 50%;
+        }
+        .client__input:not(:first-child){
+            margin-left: 10px;
+        }
+        .client__input:not(:last-child){
+            margin-right: 10px;
+        }
+    }
+    .inputs{
+        display: flex;
+        justify-content: space-between;
+    }
+    .info__input{
+        border: 1px solid #000;
+        outline:none;
+        border-radius: 2px;
+        font-size: 16px;
+        padding: 12px 15px 11px 15px;
+    }
+    .address{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        padding-bottom: 35px;
+        .inputs{
+            margin-bottom: 25px;
+            .address__input{
+                flex: 0 1 31%;
+            }
+        }  
+    }
+    .basket__btn{
+        margin-bottom: 13px;
+    }
+}
+
+@media screen and (max-width:740px){
+    .delivery{
+        
+        .title{
+            font-size: 1.7em;
+            padding-bottom: 20px;
+        }
+        .totalPrice__title{
+            font-size: 23px;
+        }
+        .client{
+            .section_title{
+                font-size: 1.25em;
+            }
+            .inputs{
+                flex-direction: column;
+            }
+            .client__input{
+                flex: 0 1 100%;
+                margin-bottom: 10px;
+            }
+            .client__input:not(:first-child){
+                margin-left: 0px;
+            }
+            .client__input:not(:last-child){
+                margin-right: 0px;
+            }
+        }
+        .address{
+            .section_title{
+                font-size: 1.25em;
+            }
+            .inputs{
+                flex-wrap: wrap;
+                justify-content: space-between;
+                .address__input{
+                    margin-bottom: 10px;
+                    flex: 0 1 48%;
+                }
+            }  
+        }
+    }
+}
+@media screen and (max-width: 510px){
+    .delivery{
+        .address{
+            .inputs{
+                .address__input{
+                    margin-bottom: 10px;
+                    flex: 0 1 100%;
+                }
+            }  
+        }
+    }
+}
+
+@media screen and(max-width:570px){
+    .top_content{
+        display: flex;
+        justify-content:space-between;
+        flex-direction: column;
+        align-items:center
+    }
+    .clear_basket{
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    .controlls{
+        flex-direction: column;
+        .order_delivery{
+            margin-top: 20px;
+        }
+    }
+}

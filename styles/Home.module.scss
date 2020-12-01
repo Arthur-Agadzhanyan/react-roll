@@ -1,0 +1,113 @@
+.main_text{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../public/main/background_ii.jpg');
+    min-height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    background-size: cover !important;
+    text-align: center;
+    h2,p,h3{
+        color:#fff;
+    }
+    h2{
+        font-size: 36px;
+        padding: 15px 0px;
+    }
+    h3{
+        padding: 15px 0px;
+        font-size: 30px;
+    }
+    p{
+        font-size: 20px;
+        padding: 15px 0px;
+    }
+    &::before{
+        content: '';
+        position: absolute;
+        top:0;
+        left:0;
+        bottom: 0;
+        right: 0;
+        background: rgba(0,0,0,0.6);
+        z-index: 1;
+    }
+    @media screen and (max-width:987px){
+        h2{
+            font-size: 36px;
+            padding: 10px 0px;
+        }
+        h3{
+            padding: 10px 0px;
+            font-size: 29px;
+        }
+        p{
+            font-size: 18px;
+            padding: 15px 0px;
+        }
+    }
+    @media screen and (max-width: 768px){
+        h2{
+            font-size: 36px;
+            padding: 10px 0px;
+        }
+        h3{
+            padding: 10px 0px;
+            font-size: 29px;
+        }
+        p{
+            font-size: 17px;
+            padding: 15px 0px;
+        }
+    }
+    @media screen and (max-width: 547px){
+        h2{
+            font-size: 36px;
+            padding: 10px 0px;
+        }
+        h3{
+            padding: 7px 0px;
+            font-size: 25px;
+        }
+        p{
+            font-size: 16px;
+            padding: 15px 0px;
+        }
+    }
+    @media screen and (max-width:450px){
+        h2{
+            font-size: 34px;
+            padding: 15px 0px 10px 0px;
+        }
+        h3{
+            padding: 10px 0px;
+            font-size: 23px;
+        }
+        p{
+            font-size: 15px;
+            padding: 15px 0px;
+        }
+    }
+    @media screen and (max-width: 400px){
+        h2{
+            font-size: 34px;
+            padding: 35px 0px 10px 0px;
+        }
+        h3{
+            padding: 10px 0px;
+            font-size: 20px;
+        }
+        p{
+            font-size: 14px;
+            padding: 15px 0px 20px 0px;
+            &:last-child{
+                padding: 15px 0px 35px 0px;
+            }
+        }
+    }
+}
+

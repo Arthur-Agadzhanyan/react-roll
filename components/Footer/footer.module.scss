@@ -1,0 +1,234 @@
+.footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #19181d !important;
+    min-height: 20vh;
+    color:#fff;
+    
+    h2{
+        color: #fff;
+    }
+    .main_container{
+        display: flex;
+    }
+    .footer__wrapper{
+        width: 100%;
+        // text-align: left;
+    }
+    .footer__menu{
+        width: 100%;
+        display: flex;
+        padding-top: 30px;
+        color:#fff;
+        .link__container{
+            flex: 0 1 33.333%;
+            text-align: center;
+
+        }
+        .menu__link{
+            font-size: 22px;
+            font-weight: 600;
+            @media screen and (max-width:511px){
+                font-size: 19px;
+            }
+            @media screen and (max-width:407px){
+                font-size: 17px;
+            }
+            @media screen and (max-width: 350px){
+                font-size: 16px;
+            }
+        }
+        padding-bottom: 30px;
+    }
+    .footer__bottom{
+        width: 100%;
+        padding: 35px 0px ;
+        font-size: 17px;
+        border-top: 1px solid #fff;
+        .copyright{
+            padding-top: 20px;
+            flex: 0 1 33.333%;
+            line-height: 1.6;
+            letter-spacing: .0305em;
+            color:#fff;
+            .phone{
+                // font-weight: bold;
+                letter-spacing: .0625em;
+            }
+            .text{
+                padding: 20px 0px 15px 0px;
+                color:#fff;
+            }
+            
+        }
+
+        .social_links{
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            flex: 0 1 33.333%;
+            .link{
+                margin: 0px 10px;
+                border: 1px solid #fff;
+                padding: 10px 13px;
+                border-radius: 50%;
+                transition: all .2s linear;
+                &:nth-child(2){
+                    padding: 10px 11px;
+                }
+                &:hover{
+                    color: #19181d;
+                    background: #fff;
+                }
+            }
+        }
+
+        .contacts_questions{
+            display: flex;
+            flex-direction: column;
+            flex: 0 1 33.333%; 
+            // padding: 0px 0px 0px 5em;
+            .contacts{
+                width: 100%;
+                display: flex;
+                font-size: 17px;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .title{
+                    
+                    font-size: 21px;
+                    padding-bottom: 10px;
+                }
+                .contacts__list{
+                    padding-bottom: 15px;
+                }
+                .list__item{
+                    letter-spacing: .0625em;
+                    padding: 5px 0px;
+                }
+            }
+            .questions{
+                width: 100%;
+                font-size: 19px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .questions__link{
+                margin: 0px 10px;
+                border: 1px solid #fff;
+                padding: 10px 13px;
+                border-radius: 50%;
+                transition: all .2s linear;
+                &:hover{
+                    color: #19181d;
+                    background: #fff;
+                }
+                }
+            }
+        }
+
+        @media screen and (max-width: 1200px){
+            font-size: 16px; 
+            // .questions{
+            //     font-size: 16px;
+            // }
+        }
+        @media screen and (max-width: 864px){
+            font-size: 15px;
+            .copyright{
+                .phone{
+                    white-space: nowrap;
+                }
+            }
+            .contacts_questions{
+                .questions{
+                    font-size: 16px;
+                }  
+                .contacts{
+                    font-size: 15px;
+                }
+            }
+        }
+        @media screen and (max-width:767px){
+            .footer__bottom{
+                display: flex;
+                flex-direction: column;
+            }
+            .copyright{
+                flex: 0 1 100%;
+            }
+            .social_links{
+                flex: 0 1 100%;
+                padding: 10px 0px;
+            }
+            .contacts_questions{
+                flex: 0 1 100%;
+                flex-direction: row;
+                align-items: flex-end;
+                .questions{
+                    display: flex;
+                    justify-content: flex-end;
+                    // align-items: flex-end; 
+                    font-size: 19px;
+                   
+                }
+                .contacts{                   
+                    display: flex;
+                    font-size: 17px;
+                    align-items: flex-start; 
+                    .contacts__list{
+                        width: auto;
+                        display: flex;
+                        justify-content: center;
+                        align-items: flex-start; 
+                        flex-direction: column;
+                    }
+                    .title{
+                    
+                        font-size: 21px;
+                        padding-bottom: 10px;
+                    }
+                }
+            }
+        }
+        @media screen and (max-width:600px){
+            .social_links{
+                    
+                    padding: 20px 0px;
+            }
+            .contacts_questions{
+                flex: 0 1 100%;
+                flex-direction: column;
+                align-items: flex-end;
+                .questions{
+                    display: flex;
+                    justify-content: flex-start;
+                    // align-items: flex-end; 
+                    font-size: 18px;
+                   
+                }
+                
+                .contacts{                   
+                    display: flex;
+                    font-size: 16px;
+                    align-items: flex-start; 
+                    .contacts__list{
+                        width: auto;
+                        display: flex;
+                        justify-content: center;
+                        align-items: flex-start; 
+                        flex-direction: column;
+                    }
+                    .title{
+                    
+                        font-size: 21px;
+                        padding-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+    
+}

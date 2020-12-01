@@ -1,0 +1,72 @@
+@import './../../styles/variables.scss';
+
+.roll_block{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0px 15px;
+    background: #fff;
+    min-height: 400px;
+    
+}
+
+// .roll_block:not(:nth-child(4n)){
+//     margin-right: 35px;
+// }
+
+.roll__img{
+    width: 80%;
+    margin: auto auto 0px auto;
+}
+
+.roll__title{
+    margin-top: 0;
+    font-size: 18px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.roll__composition{
+    display: flex;
+    padding: 5px 10px;
+    margin-bottom: 15px;
+    flex-direction: column;
+    border-radius: 10px;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.roll__bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.roll__cost{
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.roll__add{
+    color: $dark_color;
+    outline: none;
+    border: 1px solid $dark_color;
+    background: transparent;
+    padding: 10px 20px;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all .2s linear;
+    cursor: pointer;
+    &:hover{
+        background: $dark_color;
+        color: #fff
+    }
+}
+
+@media screen and (max-width: 900px){ 
+    .roll_block{
+        flex: 0 1 50%;
+    }
+}
