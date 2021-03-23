@@ -1,5 +1,5 @@
 {
     "PORT":"80",
-    "mongoUri":"mongodb+srv://artur:f1g2h11t90@cluster0.idgii.mongodb.net/store?retryWrites=true&w=majority",
-    "baseUrl":"https://react-roll.vercel.app/"
+    "mongoUri":"MONGOURI",
+    "baseUrl":"BASEURL"
 }
